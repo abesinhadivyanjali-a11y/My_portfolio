@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- =============================================
+       CHANGE: Update the title below with your name
+       ============================================= -->
+  <title>Apsara Divyanjali — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+  <!-- ===========================
+       NAVIGATION
+       =========================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <!-- CHANGE: Your initials or short brand name -->
+      <a href="#hero" class="nav__logo">AD</a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===========================
+       HERO SECTION
+       =========================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+
+    <div class="hero__content">
+      <!-- CHANGE: To use a real photo, replace the .hero__avatar div below with:
+           <img src="your-photo.jpg" alt="Apsara Divyanjali" class="hero__avatar-img" />  -->
+      <div class="hero__avatar">
+        <div class="hero__avatar-initials">AD</div>
+      </div>
+
+      <div class="hero__text">
+        <p class="hero__greeting reveal">Hello, I'm</p>
+        <!-- CHANGE: Your full name -->
+        <h1 class="hero__name reveal reveal--delay-1">Apsara<br/><em>Divyanjali</em></h1>
+        <!-- CHANGE: Your tagline -->
+        <p class="hero__tagline reveal reveal--delay-2">
+          Material Technology (Hons) Undergraduate &nbsp;&middot;&nbsp; Quality Assurance Professional
+          &nbsp;&middot;&nbsp; Tech Enthusiast &nbsp;&middot;&nbsp; Traveler &amp; Vlogger
+        </p>
+
+        <div class="hero__meta reveal reveal--delay-3">
+          <span class="hero__meta-item">
+            <i data-lucide="map-pin" class="icon-sm"></i>
+            <!-- CHANGE: Your location -->
+            Ginigathhena, Sri Lanka
+          </span>
+          <span class="hero__meta-item">
+            <i data-lucide="globe" class="icon-sm"></i>
+            English &nbsp;|&nbsp; Sinhalese
+          </span>
+        </div>
+
+        <div class="hero__cta reveal reveal--delay-4">
+          <!-- CHANGE: Update href to your CV file e.g. href="Apsara_CV.pdf" -->
+          <a href="#" class="btn btn--primary" download>
+            <i data-lucide="download" class="icon-sm"></i>
+            Download CV
+          </a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+
+        <!-- CHANGE: Update each href to your real social profiles -->
+        <div class="hero__social reveal reveal--delay-5">
+          <a href="mailto:apsara@email.com" aria-label="Email" class="social-icon">
+            <i data-lucide="mail"></i>
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://youtube.com/@your-channel" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+            <i data-lucide="youtube"></i>
+          </a>
+          <a href="https://instagram.com/your-handle" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <i data-lucide="instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll-cue">
+      <i data-lucide="chevrons-down"></i>
+    </a>
+  </section>
+
+  <!-- ===========================
+       ABOUT SECTION
+       =========================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__label reveal">About Me</div>
+      <h2 class="section__title reveal">Bridging Science,<br/><em>Quality &amp; Creativity</em></h2>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <!-- CHANGE: Your about paragraphs -->
+          <p>
+            I am a <strong>Material Technology Honours undergraduate</strong> at Rajarata University of Sri Lanka 
+            with a strong passion for understanding the science behind advanced materials and their industrial applications.
+          </p>
+          <p>
+            With professional experience in <strong>quality assurance and garment manufacturing</strong>, I specialise in 
+            final quality inspection, compliance verification, and packaging standards for export-level production.
+          </p>
+          <p>
+            Beyond academics and industry, I am a <strong>traveler and vlogger</strong> who believes in visual storytelling — 
+            whether documenting destinations or simplifying technical concepts for wider audiences.
+          </p>
+        </div>
+
+        <div class="about__cards reveal reveal--delay-1">
+          <!-- CHANGE: Volunteer interests / hobby cards -->
+          <div class="interest-card">
+            <i data-lucide="heart"></i>
+            <span>Animal Welfare</span>
+          </div>
+          <div class="interest-card">
+            <i data-lucide="palette"></i>
+            <span>Arts &amp; Culture</span>
+          </div>
+          <div class="interest-card">
+            <i data-lucide="droplets"></i>
+            <span>Clean Water &amp; Sanitation</span>
+          </div>
+          <div class="interest-card">
+            <i data-lucide="baby"></i>
+            <span>Child Welfare</span>
+          </div>
+          <div class="interest-card">
+            <i data-lucide="users"></i>
+            <span>Community Improvement</span>
+          </div>
+          <div class="interest-card">
+            <i data-lucide="video"></i>
+            <span>Travel Vlogging</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       EDUCATION SECTION
+       =========================== -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <div class="section__label reveal">Academic Background</div>
+      <h2 class="section__title reveal">Education</h2>
+
+      <!-- CHANGE: Add or remove .edu__card blocks for each qualification -->
+      <div class="edu__card reveal">
+        <div class="edu__icon">
+          <i data-lucide="graduation-cap"></i>
+        </div>
+        <div class="edu__body">
+          <span class="edu__date">2022 – Present</span>
+          <!-- CHANGE: Degree name -->
+          <h3 class="edu__degree">Bachelor of Material Technology (Hons)</h3>
+          <!-- CHANGE: University name -->
+          <p class="edu__institution">Rajarata University of Sri Lanka</p>
+          <p class="edu__desc">
+            Specialising in the science of advanced materials, industrial applications, 
+            material characterisation, and sustainability-driven manufacturing processes.
+          </p>
+          <div class="edu__tags">
+            <span>Materials Science</span>
+            <span>Industrial Applications</span>
+            <span>Quality Systems</span>
+            <span>Research Methods</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       EXPERIENCE SECTION
+       =========================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section__label reveal">Work History</div>
+      <h2 class="section__title reveal">Professional<br/><em>Experience</em></h2>
+
+      <div class="timeline">
+
+        <!-- CHANGE: Each .timeline__item is one role. Duplicate/remove as needed -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <!-- CHANGE: Job title -->
+                <h3 class="timeline__role">Packing Auditor</h3>
+                <!-- CHANGE: Company name -->
+                <p class="timeline__company">GP Garment PVT (LTD)</p>
+              </div>
+              <!-- CHANGE: Date range -->
+              <span class="timeline__date">Feb 2023 – May 2024</span>
+            </div>
+            <!-- CHANGE: Bullet points for this role -->
+            <ul class="timeline__duties">
+              <li>Final quality assessment of finished goods</li>
+              <li>Compliance verification with international export standards</li>
+              <li>Packaging and labeling inspection</li>
+              <li>Ensuring client specifications are met</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>Quality Auditing</span>
+              <span>Export Standards</span>
+              <span>Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Quality Checker</h3>
+                <p class="timeline__company">Jay Jay Mills Lanka Private Limited</p>
+              </div>
+              <span class="timeline__date">May 2023 – Aug 2023</span>
+            </div>
+            <ul class="timeline__duties">
+              <li>Conducted thorough quality inspections on production output</li>
+              <li>Implemented corrective actions to resolve quality deviations</li>
+              <li>Maintained detailed documentation of QC procedures</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>QC Inspection</span>
+              <span>Documentation</span>
+              <span>Corrective Action</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Operator Input</h3>
+                <p class="timeline__company">GP Garment (PVT) LTD</p>
+              </div>
+              <span class="timeline__date">Apr 2022 – Feb 2023</span>
+            </div>
+            <ul class="timeline__duties">
+              <li>Garment production operations and process support</li>
+              <li>Quality-conscious manufacturing execution</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>Manufacturing</span>
+              <span>Production</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       SKILLS SECTION
+       =========================== -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section__label reveal">Core Competencies</div>
+      <h2 class="section__title reveal">Skills &amp;<br/><em>Expertise</em></h2>
+
+      <div class="skills__grid">
+        <!-- CHANGE: Update skill name and data-pct (0–100) for each bar -->
+        <div class="skill reveal">
+          <div class="skill__info">
+            <span class="skill__name">Quality Assurance</span>
+            <span class="skill__pct">92%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" data-pct="92"></div></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__info">
+            <span class="skill__name">Quality Auditing</span>
+            <span class="skill__pct">88%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" data-pct="88"></div></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__info">
+            <span class="skill__name">Quality Management</span>
+            <span class="skill__pct">85%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" data-pct="85"></div></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__info">
+            <span class="skill__name">Documentation &amp; Compliance</span>
+            <span class="skill__pct">90%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" data-pct="90"></div></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__info">
+            <span class="skill__name">Team Leadership</span>
+            <span class="skill__pct">80%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" data-pct="80"></div></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__info">
+            <span class="skill__name">Project Management</span>
+            <span class="skill__pct">78%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" data-pct="78"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       CONTACT SECTION
+       =========================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__label reveal">Get In Touch</div>
+      <h2 class="section__title reveal">Let's<br/><em>Connect</em></h2>
+
+      <div class="contact__grid">
+
+        <div class="contact__info reveal">
+          <p class="contact__intro">
+            Whether you're looking to collaborate on a project, discuss material science, 
+            quality assurance opportunities, or just say hello — my inbox is always open.
+          </p>
+
+          <!-- CHANGE: Your real contact details below -->
+          <div class="contact__item">
+            <i data-lucide="mail"></i>
+            <div>
+              <span class="contact__label">Email</span>
+              <a href="mailto:apsara@email.com" class="contact__value">apsara@email.com</a>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <i data-lucide="linkedin"></i>
+            <div>
+              <span class="contact__label">LinkedIn</span>
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="contact__value">linkedin.com/in/apsara</a>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <span class="contact__label">Location</span>
+              <span class="contact__value">Ginigathhena, Central Province, Sri Lanka</span>
+            </div>
+          </div>
+
+          <!-- CHANGE: Update href to your actual CV file -->
+          <a href="#" class="btn btn--primary btn--block" download style="margin-top:2rem;">
+            <i data-lucide="download" class="icon-sm"></i>
+            Download Resume / CV
+          </a>
+        </div>
+
+        <div class="contact__form-wrap reveal reveal--delay-1">
+          <!-- CHANGE: To receive messages, add action="https://formspree.io/f/yourFormID" to the form tag -->
+          <form class="contact__form" id="contactForm">
+            <div class="form__group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">
+              <i data-lucide="send" class="icon-sm"></i>
+              Send Message
+            </button>
+            <p class="form__note" id="formNote"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       FOOTER
+       =========================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <!-- CHANGE: Your name -->
+      <p class="footer__copy">
+        &copy; <span id="year"></span> Apsara Divyanjali. Crafted with care.
+      </p>
+      <!-- CHANGE: Your social links -->
+      <div class="footer__social">
+        <a href="mailto:apsara@email.com" aria-label="Email" class="social-icon social-icon--sm"><i data-lucide="mail"></i></a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon social-icon--sm"><i data-lucide="linkedin"></i></a>
+        <a href="https://youtube.com/@your-channel" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon social-icon--sm"><i data-lucide="youtube"></i></a>
+        <a href="https://instagram.com/your-handle" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon social-icon--sm"><i data-lucide="instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
